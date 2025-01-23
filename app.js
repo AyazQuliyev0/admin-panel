@@ -106,7 +106,7 @@ const createSavedRow = (id, name, surname, salary, oldRow) => {
 
     deleteButton.addEventListener('click', () => {
         tableBody.removeChild(row);
-    });
+    })
 
     editButton.addEventListener('click', () => {
         const tempRow = document.createElement('tr');
@@ -119,7 +119,7 @@ const createSavedRow = (id, name, surname, salary, oldRow) => {
         namePart.appendChild(nameInput);
 
         const surnamePart = document.createElement('td');
-        const surnameInput = document.createElement('input');
+        const surnameInput = document.createElement('input')
         surnameInput.type = 'text';
         surnameInput.value = surname;
         surnameInput.style.width = '100%';
@@ -130,7 +130,7 @@ const createSavedRow = (id, name, surname, salary, oldRow) => {
         salaryInput.type = 'text';
         salaryInput.value = salary;
         salaryInput.style.width = '100%';
-        salaryPart.appendChild(salaryInput);
+        salaryPart.appendChild(salaryInput)
 
         const actionPart = document.createElement('td');
         const saveButton = document.createElement('button');
